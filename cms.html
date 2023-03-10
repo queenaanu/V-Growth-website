@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>V-Growth</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--enable mobile device-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--fontawesome css-->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!--bootstrap css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!--animate css-->
+      <link rel="stylesheet" href="css/animate-wow.css">
+      <!--main css-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <link rel="stylesheet" href="css/slick.min.css">
+      <!--responsive css-->
+      <link rel="stylesheet" href="css/responsive.css">
+       <!--favicon image-->
+    <link rel="icon" type="images/x-icon" href="./images/V-Growth logo.jpg">
+    <link rel="shortcut icon" href="./Image(Fave)/photo_5766874192480943047_x (1).jpg" type="image/x-icon">  
+      <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+         }
+         .contain {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+         }
+         h1 {
+            text-align: center;
+            margin-top: 0;
+         }
+         form label {
+            display: inline-block;
+            margin-bottom: 5px;
+         }
+         form input[type=text], form input[type=number], form input[type=month] {
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            width: 100%;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            color: #555;
+            font-size: 16px;
+         }
+         form input[type=submit] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+         }
+         form input[type=submit]:hover {
+            background-color: #3e8e41;
+         }
+      </style>
+   
+   </head>
+   <body>
+      <header id="header" class="top-head">
+         <!-- Static navbar -->
+         <nav class="navbar navbar-default">
+           <div class="container-fluid">
+             <div class="row">
+               <div class="col-md-4 col-sm-12 left-rs">
+                 <div class="navbar-header">
+                   <button
+                     type="button"
+                     id="top-menu"
+                     class="navbar-toggle collapsed"
+                     data-toggle="collapse"
+                     data-target="#navbar"
+                     aria-expanded="false"
+                   >
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                   </button>
+                   <a href="index.html" class="navbar-brand"
+                     ><img
+                       src="images/v-logo 2.jpg"
+                       alt=""
+                       style="margin-top: -12px"
+                   /></a>
+                 </div>
+                 <form class="navbar-form navbar-left web-sh">
+                   <div class="form">
+                     <input
+                       type="text"
+                       class="form-control"
+                       placeholder="Search for products or companies"
+                     />
+                   </div>
+                 </form>
+               </div>
+               <div class="col-md-8 col-sm-12">
+                 <div class="right-nav">
+                   <div class="login-sr">
+                     <div class="login-signup">
+                       <ul>
+                         <li><a href="account.html#login-section">Login</a></li>
+                         <li>
+                           <a class="custom-b" href="account.html">Sign up</a>
+                         </li>
+                       </ul>
+                     </div>
+                   </div>
+                   <div class="help-r hidden-xs">
+                     <div class="help-box">
+                       <ul>
+                         <li>
+                           <a data-toggle="modal" data-target="#myModal" href="#">
+                             <span>Change</span>
+                             <img style="height: 25px;" src="./images/nigeria Flag.png" alt="" />
+                           </a>
+                         </li>
+                         <li>
+                           <a href="#"
+                             ><img class="h-i" src="images/help-icon.png" alt="" />
+                             Help
+                           </a>
+                         </li>
+                       </ul>
+                     </div>
+                   </div>
+                   <div class="nav-b hidden-xs">
+                     <div class="nav-box">
+                       <ul>
+                         <li><a href="howitworks.html">How it works</a></li>
+                         <li><a href="about-us.html">About Us</a></li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <!--/.container-fluid -->
+         </nav>
+       </header>
+       <!-- Modal -->
+       <div class="modal fade lug" id="myModal" role="dialog">
+         <div class="modal-dialog">
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">
+                 &times;
+               </button>
+               <h4 class="modal-title">Change</h4>
+             </div>
+             <div class="modal-body">
+               <ul>
+                 <li>
+                   <a href="#"
+                     ><img src="./images/nigeria Flag.png" alt="" /> Nigeria</a
+                   >
+                 </li>
+                 <li>
+                   <a href="#"><img src="./images/Kenya.png" alt="" /> Kenya </a>
+                 </li>
+                 <li>
+                   <a href="#"
+                     ><img src="./images/South Africa.png" alt="" />
+                     South Africa
+                   </a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div id="sidebar" class="top-nav">
+         <ul id="sidebar-nav" class="sidebar-nav">
+           <li><a href="contact.html">Help</a></li>
+           <li><a href="howitworks.html">How it works</a></li>
+           <li><a href="account.html">V-Growth for Business</a></li>
+         </ul>
+       </div>
+      <div class="terms-conditions">
+         <div class="terms-title">
+            <div class="container">
+               <div class="row">
+                  <ol class="breadcrumb">
+                     <li><a href="#">Frontpage </a></li>
+                     <li class="active">Tax Payment Page</li>
+                  </ol>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="contain">
+                  <h1>Tax Payment</h1>
+                  <form method="post" action="process_payment.php">
+                     <label for="name">Full Name:</label>
+                     <input type="text" id="name" name="name" required>
+                     
+                     <label for="address">Address:</label>
+                     <input type="text" id="address" name="address" required>
+
+                     <label for="phone_no">Phone Number:</label>
+                     <input type="number" id="phone_no" name="phone_no" required>
+                     
+                     <label for="tax_amount">Tax Amount:</label>
+                     <input type="number" id="tax_amount" name="tax_amount" required>
+                     
+                     <label for="tax_id">Tax Identification Number:</label>
+                     <input type="number" id="tax_id" name="tax_id" required>
+
+                     <label for="credit_card">Credit Card Number:</label>
+                     <input type="text" id="credit_card" name="credit_card" required>
+                     
+                     <label for="expiry_date">Expiry Date:</label>
+                     <input type="month" id="expiry_date" name="expiry_date" required>
+                     
+                     <input type="submit" value="Submit">
+                  </form>
+               </div>
+            
+               <div class="col-md-12">
+                  <div class="terms-box">
+                     <h3>Disclaimer</h3>
+                     <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website (including, without limitation, any
+                        warranties implied by law in respect of satisfactory service delivery, fitness of purpose and/or the use of reasonable care and skill). Nothing in disclaimer will:
+                     </p>
+                     <p>limit or exclude our or your liability for death or personal injury resulting from negligence;
+                        limit or exclude our or your liability for fraud or fraudulent misrepresentation;<br>
+                        limit any  of our or your liabilities that may not be excluded under applicable law; or<br>
+                        exclude any of our or your liabilities that may not be excluded under applicable law.<br>
+                        The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer:(a) are subject to the paragraph; and (b) govern all liabilities arising under the disclaimer<br>
+                        or in relation to the subject matter of this disclaimer, including liabilities arising in contract (including negligence) and for breach of statutory duty.
+                     </p>
+                  </div>
+               </div>
+         </div>
+      </div>
+      <footer>
+         <div class="main-footer">
+           <div class="container">
+             <div class="row">
+               <div class="footer-top clearfix">
+                 <div class="col-md-2 col-sm-6">
+                   <h2>Start a free account today</h2>
+                 </div>
+                 <div class="col-md-6 col-sm-6">
+                   <div class="form-box">
+                     <input type="text" placeholder="Enter your e-mail" />
+                     <button>Continue</button>
+                   </div>
+                 </div>
+                 <div class="col-md-4 col-sm-12">
+                   <div class="help-box-f">
+                     <h4 style="width: 400px;">Question? Call us on +2348100604030 for help</h4>
+                     <p>
+                       Easy setup - no payment fees - up to 100 products for free
+                     </p>
+                   </div>
+                 </div>
+               </div>
+               <div class="footer-link-box clearfix">
+                 <div class="col-md-6 col-sm-6">
+                   <div class="left-f-box">
+                     <div class="col-sm-4">
+                       <h2>SELL ON V-GROWTH</h2>
+                       <ul>
+                         <li><a href="account.html">Create account</a></li>
+                         <li>
+                           <a href="howitworks.html">How it works suppliers</a>
+                         </li>
+                         <li><a href="/howitworks.html#QandA">FAQ for Suppliers</a></li>
+                       </ul>
+                     </div>
+                     <div class="col-sm-4">
+                       <h2>BUY ON V-GROWTH</h2>
+                       <ul>
+                         <li><a href="account.html">Create account</a></li>
+                         <li><a href="howitworks.html">How it works buyers</a></li>
+                         <!-- <li><a href="category.html">Categories</a></li> -->
+                         <li><a href="/howitworks.html#QandA">FAQ for buyers</a></li>
+                       </ul>
+                     </div>
+                     <div class="col-sm-4">
+                       <h2>COMPANY</h2>
+                       <ul>
+                         <li><a href="about-us.html">About V-Growth</a></li>
+                         <li><a href="contact.html">Contact us</a></li>
+                         <!-- <li><a href="#">Careers</a></li> -->
+                         <li><a href="cms.html">Pay Tax</a></li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-sm-6">
+                   <div class="right-f-box">
+                     <h2>CATEGORIES</h2>
+                     <ul class="col-sm-4">
+                        <li><a href="supermarket.html">Supermarket</a></li>
+                        <li><a href="health-beauty.html">Health & Beauty</a></li>
+                        <li><a href="home-office.html">Home & Office</a></li>
+                        <li><a href="phones-computing.html">Phones & Computing</a></li>
+                     </ul>
+                     <ul class="col-sm-4">
+                      
+                        <li><a href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="fashion.html">Fashion</a></li>
+                     </ul>
+                     <ul class="col-sm-4">
+                       
+                        <li><a href="baby-products.html">Baby Products</a></li>
+                        <li><a href="gaming.html">Gaming</a></li>
+                        <li><a href="automobile.html">Automobile</a></li>
+                     </ul>
+                  </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="copyright">
+           <div class="container">
+             <div class="row">
+               <div class="col-md-8">
+                 <p>
+                   <img
+                     width="90"
+                     src="images/v-logo 2.jpg"
+                     alt="#"
+                     style="margin-top: -5px"
+                   />
+                   All Rights Reserved. V-Growth © 2023
+                 </p>
+               </div>
+               <div class="col-md-4">
+                 <ul class="list-inline socials">
+                   <li>
+                     <a href="">
+                       <i class="fa fa-facebook" aria-hidden="true"></i>
+                     </a>
+                   </li>
+                   <li>
+                     <a href="">
+                       <i class="fa fa-twitter" aria-hidden="true"></i>
+                     </a>
+                   </li>
+                   <li>
+                     <a href="">
+                       <i class="fa fa-instagram" aria-hidden="true"></i>
+                     </a>
+                   </li>
+                   <li>
+                     <a href="#">
+                       <i class="fa fa-linkedin" aria-hidden="true"></i>
+                     </a>
+                   </li>
+                 </ul>
+                 <ul class="right-flag">
+                   <li>
+                     <a href="#">
+                       <!-- <img src="images/flag.png" alt="" />  -->
+                       <img style="height: 35px;" src="./images/nigeria Flag.png" alt="" /> <span>Change</span></a
+                     >
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </footer>
+      <!--main js--> 
+      <script src="js/jquery-1.12.4.min.js"></script> 
+      <!--bootstrap js--> 
+      <script src="js/bootstrap.min.js"></script> 
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/slick.min.js"></script> 
+      <script src="js/wow.min.js"></script>
+      <!--custom js--> 
+      <script src="js/custom.js"></script>
+   </body>
+</html>

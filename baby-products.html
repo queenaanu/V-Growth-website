@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>V-Growth</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--enable mobile device-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--fontawesome css-->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!--bootstrap css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!--animate css-->
+      <link rel="stylesheet" href="css/animate-wow.css">
+      <!--main css-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <link rel="stylesheet" href="css/slick.min.css">
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <!--responsive css-->
+      <link rel="stylesheet" href="css/responsive.css">
+       <!--favicon image-->
+    <link rel="icon" type="images/x-icon" href="./images/V-Growth logo.jpg">
+    <link rel="shortcut icon" href="./Image(Fave)/photo_5766874192480943047_x (1).jpg" type="image/x-icon">
+   </head>
+   <body>
+      <header id="header" class="top-head">
+         <!-- Static navbar -->
+         <nav class="navbar navbar-default">
+           <div class="container-fluid">
+             <div class="row">
+               <div class="col-md-4 col-sm-12 left-rs">
+                 <div class="navbar-header">
+                   <button
+                     type="button"
+                     id="top-menu"
+                     class="navbar-toggle collapsed"
+                     data-toggle="collapse"
+                     data-target="#navbar"
+                     aria-expanded="false"
+                   >
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                   </button>
+                   <a href="index.html" class="navbar-brand"
+                     ><img
+                       src="images/v-logo 2.jpg"
+                       alt=""
+                       style="margin-top: -12px"
+                   /></a>
+                 </div>
+                 <form class="navbar-form navbar-left web-sh">
+                   <div class="form">
+                     <input
+                       type="text"
+                       class="form-control"
+                       placeholder="Search for products or companies"
+                     />
+                   </div>
+                 </form>
+               </div>
+               <div class="col-md-8 col-sm-12">
+                 <div class="right-nav">
+                   <div class="login-sr">
+                     <div class="login-signup">
+                       <ul>
+                         <li><a href="account.html#login-section">Login</a></li>
+                         <li>
+                           <a class="custom-b" href="account.html">Sign up</a>
+                         </li>
+                       </ul>
+                     </div>
+                   </div>
+                   <div class="help-r hidden-xs">
+                     <div class="help-box">
+                       <ul>
+                         <li>
+                           <a data-toggle="modal" data-target="#myModal" href="#">
+                             <span>Change</span>
+                             <img style="height: 25px;" src="./images/nigeria Flag.png" alt="" />
+                           </a>
+                         </li>
+                         <li>
+                           <a href="#"
+                             ><img class="h-i" src="images/help-icon.png" alt="" />
+                             Help
+                           </a>
+                         </li>
+                       </ul>
+                     </div>
+                   </div>
+                   <div class="nav-b hidden-xs">
+                     <div class="nav-box">
+                       <ul>
+                         <li><a href="howitworks.html">How it works</a></li>
+                         <li><a href="about-us.html">About Us</a></li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <!--/.container-fluid -->
+         </nav>
+       </header>
+       <!-- Modal -->
+       <div class="modal fade lug" id="myModal" role="dialog">
+         <div class="modal-dialog">
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">
+                 &times;
+               </button>
+               <h4 class="modal-title">Change</h4>
+             </div>
+             <div class="modal-body">
+               <ul>
+                 <li>
+                   <a href="#"
+                     ><img src="./images/nigeria Flag.png" alt="" /> Nigeria</a
+                   >
+                 </li>
+                 <li>
+                   <a href="#"><img src="./images/Kenya.png" alt="" /> Kenya </a>
+                 </li>
+                 <li>
+                   <a href="#"
+                     ><img src="./images/South Africa.png" alt="" />
+                     South Africa
+                   </a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div id="sidebar" class="top-nav">
+         <ul id="sidebar-nav" class="sidebar-nav">
+           <li><a href="contact.html">Help</a></li>
+           <li><a href="howitworks.html">How it works</a></li>
+           <li><a href="account.html">V-Growth for Business</a></li>
+         </ul>
+       </div>
+      <div class="furniture-box">
+         <div class="terms-title">
+            <div class="container">
+               <div class="row">
+                  <ol class="breadcrumb">
+                     <li><a href="#">Fronttpage </a></li>
+                     <li class="active">Baby Product</li>
+                  </ol>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="furniture-box">
+         <div class="container">
+            <div class="row">
+               <div class="furniture-main">
+                  <h2>Baby Product</h2>
+                  <div class="col-md-3 col-sm-4">
+                     <div class="furniture-left">
+                        <h3>Filter Products</h3>
+                        <div class="by-box">
+                           <h5>By price</h5>
+                           <div id="slider-range"></div>
+                           <p>
+                              <input type="text" id="amount" readonly>
+                           </p>
+                        </div>
+                        <div class="by-com">
+                           <h5>By company</h5>
+                           <div class="list-b">
+                              <div id="boxscroll">
+                                 <div class="form-check">
+                                    <input id="checkbox1" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox1">
+                                       Gerber
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox2" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox2">
+                                       Huggies
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox3" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox3">
+                                       Philip Avent
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox4">
+                                       Graco
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox5" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox5">
+                                       Baby Berzza
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox6" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox6">
+                                       Baby Sense
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox7" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox7">
+                                       Fisher Price
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox8" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox8">
+                                       Pampers
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox9" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox9">
+                                       4moms
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox10" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox10">
+                                       Baby Einstein
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox11" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox11">
+                                       Chicco
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox12" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox12">
+                                       Owlet
+                                    </label>
+                                 </div>
+                                 <div class="form-check">
+                                    <input id="checkbox13" class="filled-in chk-col-blue" type="checkbox">
+                                    <label for="checkbox13">
+                                       Vtech
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="left-list-f">
+                           <div class="panel-group" id="accordion">
+                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                    <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-title expand">
+                                       <div class="right-arrow pull-right"><span class="caret"></span></div>
+                                       <a href="#">Sort by</a>
+                                    </h4>
+                                 </div>
+                                 <div id="collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body">Coming soon...</div>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                    <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title expand">
+                                       <div class="right-arrow pull-right"><span class="caret"></span></div>
+                                       <a href="#">Ships from</a>
+                                    </h4>
+                                 </div>
+                                 <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">Coming soon...</div>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                    <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="panel-title expand">
+                                       <div class="right-arrow pull-right"><span class="caret"></span></div>
+                                       <a href="#">Style</a>
+                                    </h4>
+                                 </div>
+                                 <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">Coming soon....</div>
+                                 </div>
+                              </div>
+                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                    <h4 data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="panel-title expand">
+                                       <div class="right-arrow pull-right"><span class="caret"></span></div>
+                                       <a href="#">Pattern type</a>
+                                    </h4>
+                                 </div>
+                                 <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">Coming soon...</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-8">
+                     <div class="furniture-middle">
+                        <div class="big-box">
+                           <div class="big-img-box">
+                              <img src="./images/cradle.jpg" alt="#" />
+                           </div>
+                           <div class="big-dit-b clearfix">
+                              <div class="col-md-6">
+                                 <div class="left-big">
+                                    <h3>Cradle</h3>
+                                    <p>By <span>Baby Sence</span> under <span>Baby Products</span></p>
+                                    <div class="prod-btn">
+                                       <a href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist</a>
+                                       <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                                       <p>92 likes</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="right-big-b">
+                                    <div class="tight-btn-b clearfix">
+                                       <a class="view-btn" href="#">View</a>
+                                       <a href="#">$2120</a>
+                                    </div>
+                                    <div class="like-list">
+                                       <ul>
+                                          <li>
+                                             <div class="im-b"><img class="" src="images/list-img-01.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-02.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-03.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-04.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-05.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-06.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row cat-pd">
+                           <div class="col-md-6 col-sm-6">
+                              <div class="small-box-c">
+                                 <div class="small-img-b">
+                                    <img src="./images/cap-shoe.jpg" alt="#" />
+                                 </div>
+                                 <div class="dit-t clearfix">
+                                    <div class="left-ti">
+                                       <h4>Knitted cap & shoe</h4>
+                                       <p>By <span>Owlet</span> under <span>Baby Products</span></p>
+                                    </div>
+                                    <a href="#" tabindex="0">$430</a>
+                                 </div>
+                                 <div class="prod-btn">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist</a>
+                                    <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                                    <p>77 likes</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <div class="small-box-c">
+                                 <div class="small-img-b">
+                                    <img src="./images/teddy-bear.jpg" alt="#" />
+                                 </div>
+                                 <div class="dit-t clearfix">
+                                    <div class="left-ti">
+                                       <h4>Healthy teady bear</h4>
+                                       <p>By <span>Graco</span> under <span>Baby Products</span></p>
+                                    </div>
+                                    <a href="#" tabindex="0">$605</a>
+                                 </div>
+                                 <div class="prod-btn">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist</a>
+                                    <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                                    <p>94 likes</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="big-box">
+                           <div class="big-img-box">
+                              <img src="./images/house.jpg" alt="" />
+                           </div>
+                           <div class="big-dit-b clearfix">
+                              <div class="col-md-6">
+                                 <div class="left-big">
+                                    <h3> Toy house</h3>
+                                    <p>By <span>  Baby Einstein</span> under <span>Baby Products</span></p>
+                                    <div class="prod-btn">
+                                       <a href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist</a>
+                                       <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                                       <p>97 likes</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="right-big-b">
+                                    <div class="tight-btn-b clearfix">
+                                       <a class="view-btn" href="#">View</a>
+                                       <a href="#">$1040</a>
+                                    </div>
+                                    <div class="like-list">
+                                       <ul>
+                                          <li>
+                                             <div class="im-b"><img class="" src="images/list-img-01.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-02.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-03.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-04.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-05.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><img src="images/list-img-06.png" alt="" /></div>
+                                          </li>
+                                          <li>
+                                             <div class="im-b"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row cat-pd">
+                           <div class="col-md-6 col-sm-6">
+                              <div class="small-box-c">
+                                 <div class="small-img-b">
+                                    <img src="./images/diaper.jpg" alt="#" />
+                                 </div>
+                                 <div class="dit-t clearfix">
+                                    <div class="left-ti">
+                                       <h4>Diaper pack </h4>
+                                       <p>By <span> Ergo</span> under <span>Baby Products</span></p>
+                                    </div>
+                                    <a href="#" tabindex="0">$120</a>
+                                 </div>
+                                 <div class="prod-btn">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist</a>
+                                    <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                                    <p>51 likes</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <div class="small-box-c">
+                                 <div class="small-img-b">
+                                    <img src="./images/candy.jpg" alt="#" />
+                                 </div>
+                                 <div class="dit-t clearfix">
+                                    <div class="left-ti">
+                                       <h4>Yummy candy</h4>
+                                       <p>By <span> Fisher</span> under <span>Baby Products</span></p>
+                                    </div>
+                                    <a href="#" tabindex="0">$190</a>
+                                 </div>
+                                 <div class="prod-btn">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i> Save to wishlist</a>
+                                    <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like this</a>
+                                    <p>68 likes</p>
+                                    <!-- <p>23 likes</p> -->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 hidden-xs">
+                     <div class="furniture-right">
+                        <h3>Categories</h3>
+                        <div class="right-list-f">
+                           <ul>
+                              <li><a href="supermarket.html"><img width="32" src="./images/products/supermarket.png" alt="#" /> Supermarket</a></li>
+                              <li><a href="health-beauty.html"><img width="32" src="./images/products/health-beauty.png" alt="#" /> Health & Beauty</a></li>
+                              <li><a href="home-office.html"><img width="32" src="./images/products/home-office.png" alt="" /> Home & Office</a></li>
+                              <li><a href="phones-computing.html"><img width="32" src="./images/products/computing.png" alt="" /> Phones & Computing</a></li>
+                              <li><a href="pharmaceuticals.html"><img width="32" src="./Image(Fave)/medicine.png" alt="" /> Pharmaceuticals</a></li>
+                              <li><a href="electronics.html"><img width="32" src="./images/products/electronics.png" alt="" /> Electronics</a></li>
+                              <li><a href="fashion.html"><img width="32" src="./images/products/fashion.png" alt="" /> Fashion</a></li>
+                              <li><a href="baby-products.html"><img width="32" src="./images/products/baby-products.png" alt="" /> Baby Products</a></li>
+                              <li><a href="gaming.html"><img width="32" src="./images/products/gaming.png" alt="" /> Gaming</a></li>
+                              <li><a href="automobile.html"><img width="32" src="./images/products/automobile.png" alt="" /> Automobile</a></li>
+                              <li><a href="#"><img width="32" src="./images/products/other-category.png" alt="" /> Other categories</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="loding-box">
+                     <a href="#">
+                        <div class="sk-wave">
+                           <div class="sk-rect sk-rect1"></div>
+                           <div class="sk-rect sk-rect2"></div>
+                           <div class="sk-rect sk-rect3"></div>
+                           <div class="sk-rect sk-rect4"></div>
+                           <div class="sk-rect sk-rect5"></div>
+                        </div>
+                        <span>Loading more awesome products...</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="main-footer">
+           <div class="container">
+             <div class="row">
+               <div class="footer-top clearfix">
+                 <div class="col-md-2 col-sm-6">
+                   <h2>Start a free account today</h2>
+                 </div>
+                 <div class="col-md-6 col-sm-6">
+                   <div class="form-box">
+                     <input type="text" placeholder="Enter your e-mail" />
+                     <button>Continue</button>
+                   </div>
+                 </div>
+                 <div class="col-md-4 col-sm-12">
+                   <div class="help-box-f">
+                     <h4 style="width: 400px;">Question? Call us on +2348100604030 for help</h4>
+                     <p>
+                       Easy setup - no payment fees - up to 100 products for free
+                     </p>
+                   </div>
+                 </div>
+               </div>
+               <div class="footer-link-box clearfix">
+                 <div class="col-md-6 col-sm-6">
+                   <div class="left-f-box">
+                     <div class="col-sm-4">
+                       <h2>SELL ON V-GROWTH</h2>
+                       <ul>
+                         <li><a href="account.html">Create account</a></li>
+                         <li>
+                           <a href="howitworks.html">How it works suppliers</a>
+                         </li>
+                         <li><a href="/howitworks.html#QandA">FAQ for Suppliers</a></li>
+                       </ul>
+                     </div>
+                     <div class="col-sm-4">
+                       <h2>BUY ON V-GROWTH</h2>
+                       <ul>
+                         <li><a href="account.html">Create account</a></li>
+                         <li><a href="howitworks.html">How it works buyers</a></li>
+                         <!-- <li><a href="category.html">Categories</a></li> -->
+                         <li><a href="/howitworks.html#QandA">FAQ for buyers</a></li>
+                       </ul>
+                     </div>
+                     <div class="col-sm-4">
+                       <h2>COMPANY</h2>
+                       <ul>
+                         <li><a href="about-us.html">About V-Growth</a></li>
+                         <li><a href="contact.html">Contact us</a></li>
+                         <!-- <li><a href="#">Careers</a></li> -->
+                         <li><a href="cms.html">Pay Tax</a></li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-sm-6">
+                   <div class="right-f-box">
+                     <h2>CATEGORIES</h2>
+                     <ul class="col-sm-4">
+                        <li><a href="supermarket.html">Supermarket</a></li>
+                        <li><a href="health-beauty.html">Health & Beauty</a></li>
+                        <li><a href="home-office.html">Home & Office</a></li>
+                        <li><a href="phones-computing.html">Phones & Computing</a></li>
+                     </ul>
+                     <ul class="col-sm-4">
+                      
+                        <li><a href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="fashion.html">Fashion</a></li>
+                     </ul>
+                     <ul class="col-sm-4">
+                       
+                        <li><a href="baby-products.html">Baby Products</a></li>
+                        <li><a href="gaming.html">Gaming</a></li>
+                        <li><a href="automobile.html">Automobile</a></li>
+                     </ul>
+                  </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="copyright">
+           <div class="container">
+             <div class="row">
+               <div class="col-md-8">
+                 <p>
+                   <img
+                     width="90"
+                     src="images/v-logo 2.jpg"
+                     alt="#"
+                     style="margin-top: -5px"
+                   />
+                   All Rights Reserved. V-Growth © 2023
+                 </p>
+               </div>
+               <div class="col-md-4">
+                 <ul class="list-inline socials">
+                   <li>
+                     <a href="">
+                       <i class="fa fa-facebook" aria-hidden="true"></i>
+                     </a>
+                   </li>
+                   <li>
+                     <a href="">
+                       <i class="fa fa-twitter" aria-hidden="true"></i>
+                     </a>
+                   </li>
+                   <li>
+                     <a href="">
+                       <i class="fa fa-instagram" aria-hidden="true"></i>
+                     </a>
+                   </li>
+                   <li>
+                     <a href="#">
+                       <i class="fa fa-linkedin" aria-hidden="true"></i>
+                     </a>
+                   </li>
+                 </ul>
+                 <ul class="right-flag">
+                   <li>
+                     <a href="#">
+                       <!-- <img src="images/flag.png" alt="" />  -->
+                       <img style="height: 35px;" src="./images/nigeria Flag.png" alt="" /> <span>Change</span></a
+                     >
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </footer>
+      <!--main js--> 
+      <script src="js/jquery-1.12.4.min.js"></script> 
+      <!--bootstrap js--> 
+      <script src="js/bootstrap.min.js"></script> 
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/slick.min.js"></script> 
+      <script src="js/jquery-ui.js"></script> 
+      <script src="js/wow.min.js"></script>
+      <!--custom js--> 
+      <script src="js/custom.js"></script>
+      <script>
+         $( function() {
+         	$( "#slider-range" ).slider({
+         		range: true,
+         		min: 0,
+         		max: 2000,
+         		values: [ 158, 1230 ],
+         		slide: function( event, ui ) {
+         			$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+         		}
+         	});
+         	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+         		" - $" + $( "#slider-range" ).slider( "values", 1 ) );
+         } );
+      </script>
+      <script src="js/jquery.nicescroll.min.js"></script> 
+      <script>
+         $(document).ready(function() {
+           $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#ededed",boxzoom:true}); // First scrollable DIV
+         });
+      </script>
+   </body>
+</html>
